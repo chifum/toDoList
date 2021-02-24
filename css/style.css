@@ -1,0 +1,103 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+:root {
+    --text-color : #000a2d;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 400px;
+    margin: 4%;
+    padding: 8px;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+}
+.header h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.add-to-do{
+    margin: 0 auto;
+    width: 97.7%;
+    position: relative;
+}
+.add-to-do input{
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 2%;
+    border: none;
+    outline-style: none;
+    background: #f1f4ff;
+}
+.add-to-do .addBtn {
+    padding: 10px;
+    margin: 0;
+    width: 25%;
+    background: #b6c6ff;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+  }
+  .add-to-do .addBtn:hover {
+    background-color:#dee5ff;
+    cursor: pointer;
+  }
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+    padding: 12px 8px 12px 40px;
+    position: relative;
+    font-size: 18px;
+    margin: 1%;
+    color: var(--text-color);
+    background: #f1f4ff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ul li:nth-child(even){
+    background: #b6c6ff;
+}
+ul li:hover {
+    background: #dee5ff;
+}  
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+@media screen and (max-width: 1000px) {
+.wrapper{
+    margin-top: 20%;
+}
+ul li{
+    padding: 12px 8px 12px 5px;
+}
+.add-to-do input{
+    padding: 7px;
+}
+.add-to-do .addBtn {
+    font-size: 0.6em;
+    padding: 10px;
+}
+}
